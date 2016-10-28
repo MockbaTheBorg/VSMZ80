@@ -1,0 +1,7 @@
+	nop
+    ld	A, 00h
+    ld	HL, 8000h
+back    ld	(HL), A
+    inc	L
+    inc A
+    jp	back

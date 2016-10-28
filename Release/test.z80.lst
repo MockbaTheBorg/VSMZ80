@@ -1,0 +1,11 @@
+0000   00                     NOP   
+0001   3E 00                  LD   A,00h   
+0003   21 00 80               LD   HL,8000h   
+0006   77           BACK:     LD   (HL),A   
+0007   2C                     INC   L   
+0008   3C                     INC   A   
+0009   C3 06 00               JP   back   
+
+
+_PC         0009
+BACK        0006
